@@ -1,6 +1,6 @@
 //  Primitive
 
-//  7 types : String, Number, Boolearn, null, undefined, Symbol, BigInt
+//  7 types : String, Number, Boolearn, null, undefined, Symbol, BigInt (BigInt => scientific value or big value)
 
 const score = 100
 const scoreValue = 100.3
