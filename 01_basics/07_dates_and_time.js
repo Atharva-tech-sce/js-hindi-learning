@@ -14,5 +14,6 @@ console.log(myDate.toUTCString());
 console.log(myDate.getTimezoneOffset());
 
 
+// only date and time
 
 
