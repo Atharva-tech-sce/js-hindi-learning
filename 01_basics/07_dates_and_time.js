@@ -22,7 +22,30 @@ let myCreatedDate = new Date(2024, 8, 3);//In javascript months starts from 0, a
 console.log(myCreatedDate.toDateString());
 
 let myCreatedDate1 = new Date(2024, 8, 3, 9, 8, 30)
-console.log(myCreatedDate1.toLocaleString());s
+console.log(myCreatedDate1.toLocaleString());
+
+let myCreatedDate2 = new Date(2024-07-8)
+
+
+
+/*
+ 
+=> JavaScript's Date object can automatically determine the date when you provide the 
+year, month, and day
+
+=> Months are zero-indexed, meaning January is 0, February is 1, and so on. So, 8 corresponds
+to September
+
+=> The Date constructor accepts the parameters in the order: year, month, day, hours, minutes, 
+seconds, milliseconds.
+
+=> If you have to extarcat only date or time or both you will have to give it specific commands 
+like 
+• toLocaleTimeString() = will only give time portion
+• toDateString() = will only give date portiom
+• toLocaleString() = will provide both time and date
+
+*/
 
 
 
