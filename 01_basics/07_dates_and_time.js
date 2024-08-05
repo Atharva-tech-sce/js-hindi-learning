@@ -24,7 +24,7 @@ console.log(myCreatedDate.toDateString());
 let myCreatedDate1 = new Date(2024, 8, 3, 9, 8, 30)
 console.log(myCreatedDate1.toLocaleString());
 
-let myCreatedDate2 = new Date(2024-07-8)
+let myCreatedDate2 = new Date("2024-07-8")
 
 
 
@@ -44,6 +44,8 @@ like
 • toLocaleTimeString() = will only give time portion
 • toDateString() = will only give date portiom
 • toLocaleString() = will provide both time and date
+
+=> But in array moths start from 01
 
 */
 
