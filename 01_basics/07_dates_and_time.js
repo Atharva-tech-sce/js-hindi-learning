@@ -18,10 +18,10 @@ let myDate = new Date()
 
 // to declare specific or new date
 
-let myCreatedDate = new Date(2024, 8, 3);//In javascript months starts from 0, at the end 3 denoted to day that's why it cannot be start with "0" otherwise it'll be consfusing with dates
+let myCreatedDate = new Date(2024, 8, 23);//In javascript months starts from 0
 console.log(myCreatedDate.toDateString());
 
-let myCreatedDate1 = new Date(2024, 8, 3, 9, 8, 30)
+let myCreatedDate1 = new Date(2024, 8, 23, 9, 8, 30)
 console.log(myCreatedDate1.toLocaleString());
 
 let myCreatedDate2 = new Date("2024-07-8")
@@ -30,8 +30,8 @@ let myCreatedDate2 = new Date("2024-07-8")
 
 /*
  
-=> JavaScript's Date object can automatically determine the date when you provide the 
-year, month, and day
+=> JavaScript's Date object can automatically determine the day when you provide the 
+year, month, and date
 
 => Months are zero-indexed, meaning January is 0, February is 1, and so on. So, 8 corresponds
 to September
