@@ -18,18 +18,38 @@ let myDate = new Date()
 
 // to declare specific or new date
 
+// Example 1
 let myCreatedDate = new Date(2024, 8, 23);//In javascript months starts from 0
-console.log(myCreatedDate.toDateString());
+// In Example 1 we wrote Date object in YYYY-MM-DD format
 
-let myCreatedDate1 = new Date(2024, 8, 23, 9, 8, 30)
-console.log(myCreatedDate1.toLocaleString());
+// Example 2
+let myCreatedDate1 = new Date(2024, 7, 5)
+// In Example 2 we wrote Date object in YYYY-MM-Day format, and we than HH-MM-MS as hours, minutes and milli seconds
 
-let myCreatedDate2 = new Date("2024-07-8")
+//Example 3
+let myCreatedDate2 = new Date("08-20-2024")
+// In example 3 we wrote Date object in MM-DD-YYYY but this time in array so the months starts from "1" not "0"
+
+// console.log(myCreatedDate.toLocaleString());
+// console.log(myCreatedDate1.toLocaleString());
+// console.log(myCreatedDate2.toLocaleString());
+
+let myTimeStamp =Date.now(); //Use case: to findout who gave the the right answers in poll first, like in quizzes
+console.log(myTimeStamp);// this will print the whole time form 1st Jan 1970 till in present time in mili second
+console.log(myCreatedDate.getTime());//This funtion is used to compare time, this will also print value in mili second,  
+// Use Case: In Air BNB you choose what time to we have to check in and out this function will do that it'll simply compare time
+
+
 
 
 
 /*
- 
+
+=> Use "Date" when you are talking about the Date object or the overall concept of a date that includes year, month, and day.
+Example: "I created a new Date object."
+Use "Day" when you are specifically referring to the day component of the date.
+Example: "The day is the 23rd." 
+
 => JavaScript's Date object can automatically determine the day when you provide the 
 year, month, and date
 
@@ -45,7 +65,7 @@ like
 • toDateString() = will only give date portiom
 • toLocaleString() = will provide both time and date
 
-=> But in array moths start from 01
+=> But in Stirng moths start from 01
 
 */
 
