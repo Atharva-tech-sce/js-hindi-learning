@@ -62,6 +62,48 @@ console.log(Object.entries(tinderuser));//all keys and its value are printed in 
 
 console.log(tinderuser.hasOwnProperty('name'));
 
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++//
+                                
+// **** Object de-structure and JSON API ****
+
+const course = {
+                
+                  coursename: "Js in hindi",
+                  price: "999",
+                  courseInstructor: "Atharva",
+}
+
+const {courseInstructor: instructor} = course /*in this we define what we need to extract like I need 
+to extract courseInstructor from coursethats why and values can be edited as we did it from courseinstructor to
+just instrucor*/
+
+// or
+
+// course.courseInstructor // this is trraditional method and whould have to make multiple of this command and can't be edited
+
+console.log(instructor);
+
+// you can say that everything in {} you can say it is destructuring
+
+// coursename will give error cause object is not defined, the JSON files contanin strings
+/* {
+  
+  "name": "Atahrva",
+  "coursename": "Js in Hindi",
+  "price": "Free"
+
+} */
+
+// API can also be found in arrays
+
+[
+  {},
+  {},
+  {}
+]
+
+
+
 
 
 
